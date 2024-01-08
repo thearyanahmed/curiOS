@@ -2,7 +2,10 @@
 name = "curios"
 version = "0.1.0"
 edition = "2018"
+authors = ["thearyanahmed <thearyanahmed@gmail.com>"]
 
-# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+[profile.dev]
+panic = "abort" # disable stack unwinding on panic
 
-[dependencies]
+[profile.release]
+panic = "abort" # disable stack unwinding on panic
